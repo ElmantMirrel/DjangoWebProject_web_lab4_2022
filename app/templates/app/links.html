@@ -1,0 +1,23 @@
+{% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>{{ title }}.</h2>
+<h3>{{ message }}</h3>
+
+{% load static %}
+
+
+<ul>
+    <li><a href="https://support.usergate.com/ru/video/ntlm" target="_blank">
+    <img src="{% static 'app/content/UG_icon_link.png' %}" alt="UG logo" /> Настройка авторизации по NTLM.</a>
+    </li>
+    <li><a href="https://support.usergate.com/ru/video/tlsv1.3" target="_blank">
+    <img src="{% static 'app/content/UG_icon_link.png' %}" alt="UG logo" /> Демонстрация инспекции протокола TLSv1.3.</a>
+    </li>
+    <li><a href="https://www.youtube.com/@UserGate" target="_blank">
+    <img src="{% static 'app/content/y_icon_logo.png' %}" alt="y logo" /> И многое другое на нашем канале YouTube.</a>
+    </li>
+</ul>
+
+{% endblock %}
